@@ -44,7 +44,7 @@ const About = () => {
             </motion.div>
             
             <motion.div
-              initial={{ opacity:, scale: 0.95 }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative rounded-2xl overflow-hidden shadow-xl"
