@@ -5,23 +5,23 @@ import { useInView } from 'react-intersection-observer';
 const steps = [
   {
     number: '01',
-    title: 'Sign up and install',
-    description: 'Create an account and add a simple code snippet to your website. No complex installation required.'
+    title: 'Sign up & set up',
+    description: 'Create your account and configure your virtual voice agents with your business information and preferences.'
   },
   {
     number: '02',
-    title: 'Train your assistant',
-    description: 'Upload your content, FAQs, and knowledge base to train your AI on your specific business information.'
+    title: 'Train your agents',
+    description: 'Upload your business information, FAQs, product details, and client data to train your AI voice agents.'
   },
   {
     number: '03',
-    title: 'Customize the experience',
-    description: 'Choose the appearance, voice, and personality that matches your brand identity and website design.'
+    title: 'Customize workflows',
+    description: 'Set up automated workflows for both inbound and outbound calling, including scheduling and follow-ups.'
   },
   {
     number: '04',
-    title: 'Go live and analyze',
-    description: 'Launch your voice AI assistant and use the dashboard to see how visitors are interacting with it.'
+    title: 'Launch & analyze',
+    description: 'Activate your voice AI agents and monitor their performance through our comprehensive analytics dashboard.'
   }
 ];
 
@@ -65,7 +65,7 @@ const HowItWorksSection = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            How <span className="gradient-text">AgentsPX.ai</span> Works
+            How <span className="gradient-text">PX AI-Agents</span> Works
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -73,7 +73,7 @@ const HowItWorksSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Get up and running with voice AI on your website in just four simple steps
+            Get up and running with AI voice agents for your business in just four simple steps
           </motion.p>
         </div>
         
@@ -114,7 +114,7 @@ const HowItWorksSection = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <a href="#demo" className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-medium py-3 px-8 rounded-full hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
-              See AgentsPX.ai in Action
+              See PX AI-Agents in Action
             </a>
           </motion.div>
         </div>
