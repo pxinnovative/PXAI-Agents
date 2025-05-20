@@ -50,8 +50,8 @@ const About = () => {
               className="relative rounded-2xl overflow-hidden shadow-xl"
             >
               <img 
-                src="https://images.unsplash.com/photo-1493200754321-b1d3cbc969a8" 
-                alt="Team workspace" 
+                src="https://images.unsplash.com/photo-1606765962248-7ff407b51667" 
+                alt="AI and technology" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-darkbg to-transparent opacity-60"></div>
