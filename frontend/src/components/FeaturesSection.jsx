@@ -1,38 +1,38 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ChatBubbleLeftRightIcon, DocumentTextIcon, CpuChipIcon, CursorArrowRaysIcon, ShieldCheckIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline';
+import { PhoneIcon, CalendarIcon, UserGroupIcon, ArrowsRightLeftIcon, BoltIcon, LockClosedIcon } from '@heroicons/react/24/outline';
 
 const features = [
   {
-    icon: <ChatBubbleLeftRightIcon className="h-8 w-8 text-primary-400" />,
-    title: 'Natural Conversations',
-    description: 'Your visitors can have natural conversations with your website, just like talking to a human assistant.'
+    icon: <PhoneIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Inbound & Outbound Calling',
+    description: 'Our AI voice agents handle both inbound calls as a 24/7 virtual receptionist and outbound calls for sales and lead qualification.'
   },
   {
-    icon: <DocumentTextIcon className="h-8 w-8 text-primary-400" />,
-    title: 'Knowledge of Your Site',
-    description: 'AgentsPX.ai learns from your website content, documents, and knowledge base to answer questions accurately.'
+    icon: <BoltIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Lead Nurturing',
+    description: 'Automated lead nurturing, follow-ups, and conversions to keep your sales pipeline active and growing without manual effort.'
   },
   {
-    icon: <CpuChipIcon className="h-8 w-8 text-primary-400" />,
-    title: 'Advanced AI',
-    description: 'Powered by cutting-edge large language models that understand context, follow-up questions, and user intent.'
+    icon: <CalendarIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Smart Scheduling',
+    description: 'Conversational call scheduling that seamlessly books appointments directly onto your team calendars without any conflicts.'
   },
   {
-    icon: <CursorArrowRaysIcon className="h-8 w-8 text-primary-400" />,
-    title: 'Easy Integration',
-    description: 'Implement on your website with just a few lines of code. No complex setup or technical knowledge required.'
+    icon: <ArrowsRightLeftIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Live Call Transfers',
+    description: 'When needed, our AI agents can transfer calls to your team members in real-time, ensuring no important conversation gets missed.'
   },
   {
-    icon: <ShieldCheckIcon className="h-8 w-8 text-primary-400" />,
-    title: 'Privacy Focused',
-    description: 'Your data stays yours. We prioritize security and privacy with encrypted communication and data storage.'
+    icon: <UserGroupIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Unlimited AI Agents',
+    description: 'Create unlimited AI agents for both inbound and outbound voice processes to scale your operations without adding staff.'
   },
   {
-    icon: <DocumentDuplicateIcon className="h-8 w-8 text-primary-400" />,
-    title: 'Custom Training',
-    description: 'Train your AI assistant on your specific documents, FAQs, and knowledge base for more accurate responses.'
+    icon: <LockClosedIcon className="h-8 w-8 text-primary-400" />,
+    title: 'White-Labeled Calls',
+    description: 'All calls can be white-labeled with your business name and brand voice, creating a seamless experience for your clients.'
   }
 ];
 
@@ -84,7 +84,7 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-5xl font-bold mb-6"
           >
-            What Can <span className="gradient-text">AgentsPX.ai</span> Do For You?
+            What Can <span className="gradient-text">PX AI-Agents</span> Do For You?
           </motion.h2>
           <motion.p
             initial={{ opacity: 0 }}
@@ -92,7 +92,7 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Transform your website into an interactive experience that engages visitors and provides instant support.
+            Boost your business with expert voice AI agents that handle calls and convert leads, while you focus on what matters most.
           </motion.p>
         </div>
         
