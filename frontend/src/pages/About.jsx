@@ -50,7 +50,7 @@ const About = () => {
               className="relative rounded-2xl overflow-hidden shadow-xl"
             >
               <img 
-                src="https://images.unsplash.com/photo-1581093458791-9f3c3700df9a" 
+                src="https://storage.googleapis.com/msgsndr/dFo8ZUSwEUj7YgEFi8Ep/media/62286091-7513-419b-94f7-7a14960b75fc.jpg" 
                 alt="AI technology and innovation" 
                 className="w-full h-full object-cover"
               />
