@@ -1,37 +1,48 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MicrophoneIcon } from '@heroicons/react/24/solid';
 
 const HeroSection = () => {
-  const [isRecording, setIsRecording] = useState(false);
-  const [transcript, setTranscript] = useState('');
-  const [aiResponse, setAiResponse] = useState('');
-  
-  const startRecording = () => {
-    setIsRecording(true);
-    
-    // Simulate voice recording and AI response
-    setTimeout(() => {
-      setTranscript('How can I use voice AI for my business?');
-      
-      setTimeout(() => {
-        setIsRecording(false);
-        
-        setTimeout(() => {
-          setAiResponse("PX AI-Agents provides both inbound and outbound voice AI solutions for your business. Our AVA assistant can handle calls 24/7, qualify leads, schedule appointments, and provide personalized client interactions.");
-        }, 800);
-      }, 2000);
-    }, 1500);
-  };
-  
-  const resetDemo = () => {
-    setIsRecording(false);
-    setTranscript('');
-    setAiResponse('');
-  };
-
+  // Add the TIXAE script to the page
   useEffect(() => {
-    return () => resetDemo();
+    // Create a script element
+    const script = document.createElement('script');
+    script.innerHTML = `
+      (function() {
+          window.VG_CONFIG = {
+              ID: "yTRjJvPFwvwJT29",
+              region: 'na', // 'eu' or 'na'corresponding to Europe and North America
+              render: 'full-width', // popup or full-width
+              // modalMode: true, // Set this to 'true' to open the widget in modal mode
+              stylesheets: [
+                  // Base TIXAE Agents CSS
+                  "https://vg-bunny-cdn.b-cdn.net/vg_live_build/styles.css",
+                  // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+              ],
+              // (SHOULD BE REMOVED OR CHANGED, PROVIDED AS AN EXAMPLE TO USE)
+              // user: {
+              //     name: 'John Doe', // User's name
+              //     email: 'johndoe@gmail.com', // User's email
+              //     phone: '+1234567890', // User's phone number
+              // }
+              //
+              // **
+              // userID: 'USER_ID', // If you want to use your own user_id
+              // autostart: true, // Whether to autostart the chatbot with the proactive message
+          }
+          var VG_SCRIPT = document.createElement("script");
+          VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+          VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
+          document.body.appendChild(VG_SCRIPT);
+      })()
+    `;
+    
+    // Append the script to the body
+    document.body.appendChild(script);
+    
+    // Clean up function
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
@@ -50,62 +61,24 @@ const HeroSection = () => {
           className="mb-8"
         >
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
-            Give your website a <span className="gradient-text">voice</span> and an <span className="gradient-text">AI brain</span>
+            Intelligent <span className="gradient-text">AI Agents</span> for Your Business
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            PX AI-Agents delivers the best conversational AI voice agents for your business. Handle both inbound and outbound calls effortlessly.
+            Leverage the power of artificial intelligence to automate tasks, gain insights, and enhance productivity. Our AI agents are designed to work seamlessly with your existing workflows.
           </p>
         </motion.div>
         
-        {/* Voice assistant demo */}
+        {/* TIXAE Agents Widget Container */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
           className="relative bg-darkbg/50 backdrop-blur-md border border-gray-800 rounded-xl p-6 max-w-2xl mx-auto shadow-2xl glow-effect mb-10"
         >
-          <div className="min-h-[220px] flex flex-col items-center">
-            {!transcript && !aiResponse && (
-              <div className="text-center text-gray-400 mb-4">
-                Click the microphone to ask a question
-              </div>
-            )}
-            
-            {transcript && (
-              <div className="bg-darkbg-lighter rounded-xl p-4 mb-4 w-full text-left">
-                <div className="text-sm text-gray-400 mb-1">You asked:</div>
-                <p className="text-white">{transcript}</p>
-              </div>
-            )}
-            
-            {aiResponse && (
-              <motion.div 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="bg-primary-900/30 border border-primary-700/30 rounded-xl p-4 my-2 w-full text-left"
-              >
-                <div className="text-sm text-primary-400 mb-1">PX AI-Agents:</div>
-                <p className="text-white">{aiResponse}</p>
-              </motion.div>
-            )}
-          </div>
-          
-          <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
-            <button
-              onClick={isRecording ? resetDemo : startRecording}
-              className="relative group"
-              aria-label="Start voice recording"
-            >
-              <div className={`absolute -inset-0.5 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-full blur-sm transition-all duration-500 ${isRecording ? 'opacity-100 scale-110' : 'opacity-70 group-hover:opacity-100 group-hover:scale-105'}`}></div>
-              
-              <div className={`relative flex items-center justify-center h-16 w-16 rounded-full ${isRecording ? 'bg-primary-700' : 'bg-darkbg-lighter group-hover:bg-darkbg'} border-2 border-gray-700 transition-all duration-300`}>
-                <MicrophoneIcon className={`h-7 w-7 ${isRecording ? 'text-white animate-pulse' : 'text-primary-400 group-hover:text-primary-300'}`} />
-                
-                {isRecording && (
-                  <div className="absolute -inset-4 rounded-full border-2 border-primary-500 opacity-50 pulse-ring"></div>
-                )}
-              </div>
-            </button>
+          <div className="flex justify-center">
+            <div style={{ width: '500px', height: '500px' }} id="VG_OVERLAY_CONTAINER">
+              {/* Here is where TIXAE Agents renders the widget */}
+            </div>
           </div>
         </motion.div>
         
