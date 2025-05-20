@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
           <div className="col-span-2">
             <Link to="/" className="text-white font-display font-bold text-xl mb-4 block">
+              <span className="text-primary-500">PX</span>
+              <span className="text-primary-500"> AI-</span>
               <span className="text-primary-500">Agents</span>
-              <span className="text-secondary-500">PX</span>
-              <span className="text-white">.ai</span>
             </Link>
             <p className="text-gray-400 mb-6 max-w-md">
-              AgentsPX.ai transforms your website into an interactive voice experience. Give your website a mouth and a brain.
+              PX AI-Agents delivers the best conversational AI agents for your business. Our intelligent AI solutions help you automate tasks, gain insights, and enhance productivity.
             </p>
             <div className="flex space-x-4">
               <a href="#twitter" className="text-gray-400 hover:text-primary-400 transition-colors duration-300">
