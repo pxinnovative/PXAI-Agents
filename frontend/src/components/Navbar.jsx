@@ -43,9 +43,9 @@ const Navbar = () => {
             <Link to="/contact" className="text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium">
               Contact
             </Link>
-            <Link to="/login" className="ml-3 bg-darkbg/80 hover:bg-primary-900/80 text-white font-medium rounded-full border border-primary-500 px-4 py-2 text-sm transition-colors duration-300">
-              Login to AVA
-            </Link>
+            <a href="https://px.tixaeagents.ai/" className="ml-3 bg-darkbg/80 hover:bg-primary-900/80 text-white font-medium rounded-full border border-primary-500 px-4 py-2 text-sm transition-colors duration-300">
+              Login to PX-AI
+            </a>
           </div>
           
           {/* Mobile menu button */}
