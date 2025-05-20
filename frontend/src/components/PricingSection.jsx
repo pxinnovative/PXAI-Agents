@@ -117,7 +117,7 @@ const PricingSection = () => {
   });
 
   return (
-    <section id="pricing" className="py-24 bg-gradient-to-b from-primary-900/10 to-darkbg-lighter/30 relative">
+    <section id="pricing" className="py-24 bg-gradient-to-b from-primary-900/10 to-darkbg-lighter/30 relative border-t border-b border-primary-800/20">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-darkbg-lighter/50 to-darkbg/70 opacity-80"></div>
       
