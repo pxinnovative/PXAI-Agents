@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Pricing from "./pages/Pricing";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 // Layout wrapper that includes Navbar and Footer
 const Layout = ({ children }) => {
@@ -45,36 +46,11 @@ function App() {
             </Layout>
           }
         />
-        {/* Placeholder routes for other pages */}
-        <Route
-          path="/community"
-          element={
-            <Layout>
-              <About />
-            </Layout>
-          }
-        />
-        <Route
-          path="/blog"
-          element={
-            <Layout>
-              <About />
-            </Layout>
-          }
-        />
-        <Route
-          path="/support"
-          element={
-            <Layout>
-              <About />
-            </Layout>
-          }
-        />
         <Route
           path="/contact"
           element={
             <Layout>
-              <About />
+              <Contact />
             </Layout>
           }
         />
@@ -82,5 +58,7 @@ function App() {
     </BrowserRouter>
   );
 }
+
+export default App;
 
 export default App;
