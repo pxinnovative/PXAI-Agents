@@ -92,7 +92,7 @@ const FeaturesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl text-gray-300 max-w-3xl mx-auto"
           >
-            Boost your business with expert voice AI agents that handle calls and convert leads, while you focus on what matters most.
+            Boost your business with our expert voice and conversation AI agents that handle calls and messages, and convert leads, while you focus on what matters most.
           </motion.p>
         </div>
         
