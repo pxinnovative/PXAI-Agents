@@ -5,24 +5,24 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 const testimonials = [
   {
-    content: "AgentsPX.ai has completely transformed our customer support. Our website now answers questions instantly, and we've seen a 40% reduction in support tickets.",
-    author: "Sarah Johnson",
-    position: "CTO, TechVision Inc."
-  },
-  {
-    content: "Implementing AgentsPX.ai on our e-commerce site increased conversions by 22%. Customers love being able to ask questions about products before buying.",
+    content: "PX AI-Agents has completely transformed how we handle customer calls. Our AI agents qualify leads 24/7, and we've seen a 45% increase in booked appointments.",
     author: "Michael Chen",
-    position: "Director of E-Commerce, StyleHub"
+    position: "Marketing Director, TechVision Inc."
   },
   {
-    content: "As a SaaS company, we needed a solution that could explain our complex product features. AgentsPX.ai does this perfectly, handling technical questions with ease.",
-    author: "Jennifer Patel",
-    position: "Product Manager, CloudServe"
+    content: "Since implementing PX AI-Agents for our agency, we've been able to justify higher fees to clients while providing better service through automated outbound follow-ups.",
+    author: "Sarah Rodriguez",
+    position: "CEO, Growth Marketing Partners"
   },
   {
-    content: "Our real estate website now has a voice assistant that can answer questions about listings, neighborhoods, and mortgage rates. Client engagement is at an all-time high.",
-    author: "Robert Garcia",
-    position: "Marketing Director, Prime Properties"
+    content: "The client retention rate for our agency has improved dramatically since we added PX AI-Agents. Our clients love that their callers never have to wait on hold.",
+    author: "David Patel",
+    position: "Founder, DigitalEdge Agency"
+  },
+  {
+    content: "The white-labeled call feature is a game-changer for our business. Customers have no idea they're talking to an AI, and our team only gets involved when absolutely necessary.",
+    author: "Jennifer Thompson",
+    position: "Operations Manager, Premier Services"
   }
 ];
 
@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
             Trusted by <span className="gradient-text">Businesses</span> Worldwide
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            See what our customers are saying about their experience with AgentsPX.ai
+            See what our customers are saying about their experience with PX AI-Agents
           </p>
         </motion.div>
         
