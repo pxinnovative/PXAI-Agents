@@ -27,8 +27,8 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-white font-display font-bold text-xl">
               <span className="text-primary-500">PX</span>
-              <span className="text-white"> AI-</span>
-              <span className="text-secondary-500">Agents</span>
+              <span className="text-primary-500"> AI-</span>
+              <span className="text-primary-500">Agents</span>
             </Link>
           </div>
           
