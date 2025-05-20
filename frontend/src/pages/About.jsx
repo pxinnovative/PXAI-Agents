@@ -33,13 +33,13 @@ const About = () => {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
               <p className="text-gray-300 mb-6">
-                AgentsPX.ai was founded in 2023 by a team of AI researchers and web developers who saw the potential of bringing voice interaction to every website on the internet.
+                PX AI-Agents was founded in 2023 by a team of AI researchers and business process experts who saw the potential of bringing artificial intelligence to everyday business operations.
               </p>
               <p className="text-gray-300 mb-6">
-                We believed that the future of web interaction would go beyond clicks and taps. With advances in natural language processing and speech recognition, we saw an opportunity to create a more natural and intuitive way for people to interact with digital content.
+                We believed that the future of business would be driven by intelligent automation. With advances in natural language processing and machine learning, we created a platform that enables businesses to deploy AI agents for various tasks.
               </p>
               <p className="text-gray-300">
-                Our team has grown to include experts in AI, UX design, and web development, all working together to make voice interaction on websites as commonplace as clicking a button.
+                Our team has grown to include experts in AI, business operations, and customer experience, all working together to make AI agents an essential part of modern business strategy.
               </p>
             </motion.div>
             
