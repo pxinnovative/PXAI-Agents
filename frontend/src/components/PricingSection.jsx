@@ -117,9 +117,9 @@ const PricingSection = () => {
   });
 
   return (
-    <section id="pricing" className="py-24 bg-darkbg relative">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-darkbg to-darkbg-lighter opacity-50"></div>
+    <section id="pricing" className="py-24 bg-gradient-to-b from-primary-900/10 to-darkbg-lighter/30 relative">
+      {/* Background gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-darkbg-lighter/50 to-darkbg/70 opacity-80"></div>
       
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16" ref={ref}>
