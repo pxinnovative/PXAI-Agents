@@ -48,6 +48,14 @@ const HeroSection = () => {
       if (script.parentNode) {
         document.body.removeChild(script);
       }
+      
+      // Remove all scripts with the bundle URL
+      const scripts = document.querySelectorAll(`script[src="https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js"]`);
+      scripts.forEach(s => {
+        if (s.parentNode) {
+          s.parentNode.removeChild(s);
+        }
+      });
     };
   }, []);
 
