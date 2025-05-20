@@ -73,7 +73,7 @@ const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} AgentsPX.ai. All rights reserved.
+            &copy; {new Date().getFullYear()} PX AI-Agents. All rights reserved.
           </p>
           
           <div className="flex space-x-6">
