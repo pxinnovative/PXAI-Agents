@@ -26,28 +26,19 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="text-white font-display font-bold text-xl">
-              <span className="text-primary-500">Agents</span>
-              <span className="text-secondary-500">PX</span>
-              <span className="text-white">.ai</span>
+              <span className="text-primary-500">PX</span>
+              <span className="text-white"> AI-</span>
+              <span className="text-secondary-500">Agents</span>
             </Link>
           </div>
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/community" className="text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium">
-              Community
-            </Link>
             <Link to="/about" className="text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium">
               About
             </Link>
-            <Link to="/blog" className="text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium">
-              Blog
-            </Link>
             <Link to="/pricing" className="text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium">
               Pricing
-            </Link>
-            <Link to="/support" className="text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium">
-              Support
             </Link>
             <Link to="/contact" className="text-gray-300 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium">
               Contact
@@ -83,20 +74,11 @@ const Navbar = () => {
           className="md:hidden bg-darkbg/95 backdrop-blur-lg"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/community" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Community
-            </Link>
             <Link to="/about" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               About
             </Link>
-            <Link to="/blog" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Blog
-            </Link>
             <Link to="/pricing" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               Pricing
-            </Link>
-            <Link to="/support" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-              Support
             </Link>
             <Link to="/contact" className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
               Contact
