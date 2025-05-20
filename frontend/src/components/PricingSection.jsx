@@ -5,49 +5,49 @@ import { CheckIcon } from '@heroicons/react/24/solid';
 
 const pricingPlans = [
   {
-    name: 'Starter',
-    price: '$29',
+    name: 'Kickstart',
+    price: '$39',
     period: '/month',
-    description: 'Perfect for small websites and blogs',
+    description: 'Perfect for small businesses and startups',
     features: [
-      'Voice AI Assistant',
-      'Up to 500 conversations/month',
-      'Standard response time',
-      'Basic customization options',
+      '100 minutes of AI voice calling',
+      'Inbound voice receptionist',
+      'Up to 5 team members',
       'Email support',
-      'Knowledge base integration'
+      'Basic analytics',
+      'Call recording'
     ]
   },
   {
-    name: 'Professional',
-    price: '$79',
+    name: 'Starter',
+    price: '$99',
     period: '/month',
-    description: 'For growing businesses and e-commerce',
+    description: 'For growing businesses and teams',
     features: [
-      'Everything in Starter, plus:',
-      'Up to 2,000 conversations/month',
-      'Faster response time',
-      'Advanced customization options',
+      '250 minutes of AI voice calling',
+      'Inbound & outbound calling',
+      'Up to 10 team members',
       'Priority email support',
-      'Analytics dashboard',
-      'Multiple language support'
+      'Advanced analytics',
+      'Call recording & transcription',
+      'Workflow automation'
     ],
     highlighted: true
   },
   {
-    name: 'Enterprise',
-    price: 'Custom',
-    period: '',
-    description: 'For large businesses with high volume',
+    name: 'Professional',
+    price: '$299',
+    period: '/month',
+    description: 'For businesses managing multiple teams',
     features: [
-      'Everything in Professional, plus:',
-      'Unlimited conversations',
-      'Fastest response time',
-      'Full white-labeling options',
-      'Dedicated support team',
-      'Advanced analytics',
-      'Custom AI training',
-      'SLA guarantees'
+      '600 minutes of AI voice calling',
+      'Inbound & outbound calling',
+      'Up to 50 team members',
+      'Premium support',
+      'Advanced analytics & reporting',
+      'Custom AI voice training',
+      'Advanced workflow automation',
+      'API access'
     ]
   }
 ];
@@ -103,7 +103,7 @@ const PricingCard = ({ plan }) => {
               : 'bg-darkbg/80 text-white border border-gray-700 hover:border-primary-500'
           }`}
         >
-          {plan.price === 'Custom' ? 'Contact Sales' : 'Get Started'}
+          Get Started
         </a>
       </div>
     </motion.div>
@@ -132,7 +132,7 @@ const PricingSection = () => {
               Simple, <span className="gradient-text">Transparent</span> Pricing
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Choose the plan that fits your needs. All plans include core voice AI functionality.
+              Choose the plan that fits your needs. All plans include our core voice AI technology.
             </p>
           </motion.div>
         </div>
@@ -150,7 +150,7 @@ const PricingSection = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-gray-400"
           >
-            All plans include a 14-day free trial. No credit card required to start.
+            Need a custom plan? Contact our sales team for a tailored solution that fits your business needs.
           </motion.p>
         </div>
       </div>
