@@ -14,10 +14,10 @@ const About = () => {
       {/* Hero section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-          About <span className="gradient-text">AgentsPX.ai</span>
+          About <span className="gradient-text">PX AI-Agents</span>
         </h1>
         <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-          We're on a mission to transform how people interact with websites through voice AI technology.
+          We're on a mission to transform how businesses operate through intelligent AI agents that enhance productivity and drive growth.
         </p>
       </div>
       
