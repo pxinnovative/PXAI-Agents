@@ -42,17 +42,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <section id="testimonials" className="py-24 relative overflow-hidden">
-      {/* Background image with overlay */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="https://images.unsplash.com/photo-1567400358510-f027b3196d5b" 
-          alt="Corporate building" 
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-darkbg/90"></div>
-      </div>
-      
+    <section id="testimonials" className="py-24 relative overflow-hidden bg-darkbg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
