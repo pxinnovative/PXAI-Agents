@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { PhoneIcon, CalendarIcon, UserGroupIcon, ArrowsRightLeftIcon, BoltIcon, LockClosedIcon } from '@heroicons/react/24/outline';
+import { PhoneIcon, CalendarIcon, ArrowsRightLeftIcon, BoltIcon, ChartBarIcon, ArrowsPointingOutIcon, ClockIcon, CpuChipIcon } from '@heroicons/react/24/outline';
 
 const features = [
   {
@@ -25,14 +25,24 @@ const features = [
     description: 'When needed, our AI agents can transfer calls to your team members in real-time, ensuring no important conversation gets missed.'
   },
   {
-    icon: <UserGroupIcon className="h-8 w-8 text-primary-400" />,
-    title: 'Unlimited AI Agents',
-    description: 'Create unlimited AI agents for both inbound and outbound voice processes to scale your operations without adding staff.'
+    icon: <ArrowsPointingOutIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Easy Integration',
+    description: 'Seamlessly integrate our AI agents with your existing tools and platforms, ensuring a smooth transition and minimal disruption to your operations.'
   },
   {
-    icon: <LockClosedIcon className="h-8 w-8 text-primary-400" />,
-    title: 'White-Labeled Calls',
-    description: 'All calls can be white-labeled with your business name and brand voice, creating a seamless experience for your clients.'
+    icon: <ChartBarIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Advanced Analytics',
+    description: 'Gain valuable insights from your data with our powerful analytics capabilities, helping you make data-driven decisions with confidence.'
+  },
+  {
+    icon: <CpuChipIcon className="h-8 w-8 text-primary-400" />,
+    title: 'Workflow Automation',
+    description: 'Automate repetitive tasks and streamline complex workflows with intelligent AI agents that learn and adapt to your business processes.'
+  },
+  {
+    icon: <ClockIcon className="h-8 w-8 text-primary-400" />,
+    title: '24/7 Availability',
+    description: 'Our AI agents work around the clock, ensuring your business operations continue smoothly even outside regular working hours.'
   }
 ];
 
