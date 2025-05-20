@@ -48,15 +48,6 @@ const HowItWorksSection = () => {
 
   return (
     <section className="py-24 bg-darkbg-lighter relative">
-      {/* Background illustration */}
-      <div className="absolute right-0 top-0 w-1/3 h-full opacity-20 pointer-events-none">
-        <img
-          src="https://images.unsplash.com/photo-1717501218385-55bc3a95be94"
-          alt="AI illustration"
-          className="h-full w-full object-cover object-left"
-        />
-      </div>
-      
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16" ref={ref}>
           <motion.h2
