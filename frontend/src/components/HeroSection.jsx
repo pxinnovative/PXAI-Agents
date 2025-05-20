@@ -29,19 +29,25 @@ const HeroSection = () => {
               // userID: 'USER_ID', // If you want to use your own user_id
               // autostart: true, // Whether to autostart the chatbot with the proactive message
           }
-          var VG_SCRIPT = document.createElement("script");
-          VG_SCRIPT.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
-          VG_SCRIPT.defer = true; // Remove 'defer' if you want widget to load faster (Will affect website loading)
-          document.body.appendChild(VG_SCRIPT);
       })()
     `;
     
-    // Append the script to the body
-    document.body.appendChild(script);
+    // Append the script to the body only on the home page
+    if (window.location.pathname === "/" || window.location.pathname === "") {
+      document.body.appendChild(script);
+      
+      // Load the bundle
+      const vgScript = document.createElement('script');
+      vgScript.src = "https://vg-bunny-cdn.b-cdn.net/vg_live_build/vg_bundle.js";
+      vgScript.defer = true;
+      document.body.appendChild(vgScript);
+    }
     
     // Clean up function
     return () => {
-      document.body.removeChild(script);
+      if (script.parentNode) {
+        document.body.removeChild(script);
+      }
     };
   }, []);
 
