@@ -12,13 +12,13 @@ const HeroSection = () => {
     
     // Simulate voice recording and AI response
     setTimeout(() => {
-      setTranscript('How can I add voice AI to my website?');
+      setTranscript('How can I use voice AI for my business?');
       
       setTimeout(() => {
         setIsRecording(false);
         
         setTimeout(() => {
-          setAiResponse("AgentsPX.ai makes it easy to add voice AI to your website with just a few lines of code. You can customize the assistant's knowledge, appearance, and personality to match your brand.");
+          setAiResponse("PX AI-Agents provides both inbound and outbound voice AI solutions for your business. Our AVA assistant can handle calls 24/7, qualify leads, schedule appointments, and provide personalized client interactions.");
         }, 800);
       }, 2000);
     }, 1500);
@@ -50,10 +50,10 @@ const HeroSection = () => {
           className="mb-8"
         >
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 tracking-tight">
-            Give your website a <span className="gradient-text">mouth</span> and a <span className="gradient-text">brain</span>
+            Give your website a <span className="gradient-text">voice</span> and an <span className="gradient-text">AI brain</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            AgentsPX.ai transforms your website into an interactive voice experience. Your visitors can now talk with your website using natural language.
+            PX AI-Agents delivers the best conversational AI voice agents for your business. Handle both inbound and outbound calls effortlessly.
           </p>
         </motion.div>
         
@@ -84,7 +84,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="bg-primary-900/30 border border-primary-700/30 rounded-xl p-4 my-2 w-full text-left"
               >
-                <div className="text-sm text-primary-400 mb-1">AgentsPX.ai:</div>
+                <div className="text-sm text-primary-400 mb-1">PX AI-Agents:</div>
                 <p className="text-white">{aiResponse}</p>
               </motion.div>
             )}
@@ -116,19 +116,10 @@ const HeroSection = () => {
           className="mt-16 md:mt-20"
         >
           <a href="#features" className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white font-medium py-3 px-8 rounded-full hover:shadow-lg hover:shadow-primary-500/20 transition-all duration-300">
-            Get Instant Access
+            Get Started Now
           </a>
           <p className="mt-4 text-sm text-gray-400">No credit card required</p>
         </motion.div>
-      </div>
-      
-      {/* Featured image */}
-      <div className="absolute bottom-0 right-0 opacity-30 md:opacity-60 pointer-events-none">
-        <img 
-          src="https://images.unsplash.com/photo-1518444667766-94728310399f" 
-          alt="Voice assistant device" 
-          className="w-40 md:w-60 lg:w-80 float-animation"
-        />
       </div>
     </section>
   );
